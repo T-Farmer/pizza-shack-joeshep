@@ -17,10 +17,6 @@ app.locals.body.magic = 'Fooooooo!';
 app.use(express.static('public'));
 app.use(routes);
 
-app.get('/contacts', (req, res, next) => {
-  res.render('contacts');
-});
-
 app.get('/login', (req, res, next) => {
   res.render('login');
 });
