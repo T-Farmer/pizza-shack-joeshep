@@ -4,6 +4,8 @@ require('dotenv').config();
 const express = require('express');
 const app = express();
 
+const routes = require('./routes/')
+
 // pug configuration
 app.set('view engine', 'pug');
 
@@ -13,14 +15,7 @@ app.locals.body.magic = 'Fooooooo!';
 
 // middleware
 app.use(express.static('public'));
-
-app.get('/', (req, res, next) => {
-  res.render('index');
-});
-
-app.get('/about', (req, res, next) => {
-  res.render('about');
-});
+app.use(routes);
 
 app.get('/contacts', (req, res, next) => {
   res.render('contacts');
