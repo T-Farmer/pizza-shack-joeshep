@@ -17,10 +17,6 @@ app.locals.body.magic = 'Fooooooo!';
 app.use(express.static('public'));
 app.use(routes);
 
-app.get('/login', (req, res, next) => {
-  res.render('login');
-});
-
 app.use((req, res) => {
   res.render('404');
 });
