@@ -4,6 +4,7 @@ const {Router} = require('express');
 const router = Router();
 
 // public routes
+
 router.use(require('./about'))
 router.use(require('./contact'))
 router.use(require('./login'))
@@ -22,6 +23,7 @@ router.use((req, res, next) => {
 });
 
 //private routes
+
 router.use(require('./logout'))
 router.use(require('./order'))
 

@@ -2,10 +2,11 @@
 
 const {Router} = require('express');
 
-const {show} = require('../controllers/contactsCtrl');
+const {show, addContact} = require('../controllers/contactsCtrl');
 
 const router = Router();
 
 router.get('/contacts', show);
+router.post('/contacts', addContact);
 
 module.exports = router;
