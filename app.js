@@ -12,6 +12,7 @@ app.set('view engine', 'pug');
 
 app.locals.company = 'Pizza Shack 🍕';
 app.locals.body = {};
+app.locals.errors = {};
 app.locals.body.magic = 'Fooooooo!';
 
 // middleware

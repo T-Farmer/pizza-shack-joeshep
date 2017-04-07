@@ -6,4 +6,4 @@ const Size = bookshelf.Model.extend({
   tableName: 'sizes'
 });
 
-module.exports = Contact;
+module.exports = Size;

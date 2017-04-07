@@ -2,7 +2,7 @@ extends partials/layout.pug
 
 block content
   .heading
-    h1 Register
+    h1 Login
     if msg
       h2= msg
   .login-form
@@ -23,14 +23,6 @@ block content
           placeholder='*********'
           required
         )
-      .form-group
-        label(for='confirmation') Password Confirmation
-        input.form-control#confirmation(
-          type='password'
-          name='confirmation'
-          placeholder='*********'
-          required
-        )
       .contact-form__submit
         a.btn.btn-danger.btn-lg(href='/') Cancel
-        input.btn.btn-success.btn-lg(type='submit' value='Register')
+        input.btn.btn-success.btn-lg(type='submit' value='Login')
